@@ -36,7 +36,20 @@
         <img src="bebe.jpg" alt='Eco bebe' width='200.px'/>
         <img src="bebe1.jpg" alt='Eco bebe1' width='200.px'/>
         <br>
-        <input type="button" name="pregunta1" value="Niño" onclick="seleccionarOpcion('Niño')" required>
-        <input type="button" name="pregunta1" value="Niña" onclick="seleccionarOpcion('Niña')" required><br><br>
+        <form id="encuestaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br><br>
+    
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required><br><br>
+    
+            <label for="pregunta1">¿Es niño o niña el bebé?</label><br>
+            <input type="button" name="pregunta1" value="Niño" onclick="seleccionarOpcion('Niño')" required>
+            <input type="button" name="pregunta1" value="Niña" onclick="seleccionarOpcion('Niña')" required><br><br>
+    
+            <input type="submit" value="Enviar">
+        </form>
+
+        <script src="script.js"></script>
     </body>
 </html>
